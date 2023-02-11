@@ -21,7 +21,7 @@ void loop() {
   Serial.println("Valor B: " + String(valorB));
   delay(250);
 
-  if (valorA == valorB) {
+  if ((valorA + valorB) == 0 || (valorA + valorB) == 2) {
     digitalWrite(led, HIGH);
   } else {
     digitalWrite(led, LOW);

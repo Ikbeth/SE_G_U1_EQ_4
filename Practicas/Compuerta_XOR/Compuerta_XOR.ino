@@ -1,4 +1,4 @@
-int inA = A0;
+Xint inA = A0;
 int inB = A1;
 int led = 2;
 
@@ -21,7 +21,7 @@ void loop() {
   Serial.println("Valor B: " + String(valorB));
   delay(250);
 
-  if (valorA == valorB) {
+  if ((valorA + valorB) == 1) {
     digitalWrite(led, LOW);
   } else {
     digitalWrite(led, HIGH);
